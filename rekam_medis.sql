@@ -57,7 +57,8 @@ CREATE TABLE `pasien` (
   `alamat` varchar(100) NOT NULL,
   `tanggal_lahir` varchar(25) NOT NULL,
   `jenis_kelamin` enum('L','P') DEFAULT NULL,
-  `riwayat_penyakit` varchar(100) NOT NULL
+  `riwayat_penyakit` varchar(100) NOT NULL,
+	`gol_darah` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -65,10 +66,10 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`id`, `nama`, `alamat`, `tanggal_lahir`, `jenis_kelamin`, `riwayat_penyakit`) VALUES
-(12712101, 'Denaya Pramudya', 'JL.Dr Mansyur', '02 Januari 2001', 'L', 'gagal ginjal,diabetes,cacingan'),
-(12712102, 'Faiz Ahmad', 'Jl.Setia Budi', '21 Februari 2000', 'L', 'asam lambung'),
-(12712103, 'Faris Al Falaq', 'Jl.Klambir Lima', '31 Mei 2001', 'L', 'asma'),
-(12712104, 'Faisal Lazuardy', 'Jl.Binjai', '04 Juni 2001', 'L', 'malaria');
+(12712101, 'Denaya Pramudya', 'JL.Dr Mansyur', '02 Januari 2001', 'L', 'gagal ginjal,diabetes,cacingan','A'),
+(12712102, 'Faiz Ahmad', 'Jl.Setia Budi', '21 Februari 2000', 'L', 'asam lambung','A'),
+(12712103, 'Faris Al Falaq', 'Jl.Klambir Lima', '31 Mei 2001', 'L', 'asma','A'),
+(12712104, 'Faisal Lazuardy', 'Jl.Binjai', '04 Juni 2001', 'L', 'malaria','A');
 
 --
 -- Indexes for dumped tables
