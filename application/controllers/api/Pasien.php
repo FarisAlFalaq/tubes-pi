@@ -50,14 +50,14 @@ class Pasien extends REST_Controller
                 $this->response ([
                     'status' => true,
                     'id' => $id,
-                    'message' => 'Deleted the resource.'
+                    'message' => 'Data berhasil dihapus'
                 ], REST_Controller::HTTP_NO_CONTENT);
             } else {
                 // id tidak ditemukan
                 $this->response([
                     'status' => false,
                     'message' => 'ID tidak ditemukan'
-                ], REST_Controller::HTTP_BAD_REQUEST);
+                ], REST_Controller::HTTP_NOT_FOUND);
             }
         }
     }
@@ -70,6 +70,7 @@ class Pasien extends REST_Controller
             'tanggal_lahir' => $this->post('tanggal_lahir'),
             'jenis_kelamin' => $this->post('jenis_kelamin'),
             'riwayat_penyakit' => $this->post('riwayat_penyakit'),
+            'gol_darah' => $this->post('gol_darah')
         ];
 
         if( $this->pasien->createPasien($data) > 0)
@@ -95,6 +96,7 @@ class Pasien extends REST_Controller
             'tanggal_lahir' => $this->put('tanggal_lahir'),
             'jenis_kelamin' => $this->put('jenis_kelamin'),
             'riwayat_penyakit' => $this->put('riwayat_penyakit'),
+            'gol_darah' => $this->put('gol_darah')
         ];
 
         if($this->pasien->updatePasien($data, $id) > 0)
