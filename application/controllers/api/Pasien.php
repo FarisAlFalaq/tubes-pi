@@ -51,7 +51,7 @@ class Pasien extends REST_Controller
                     'status' => true,
                     'id' => $id,
                     'message' => 'Data berhasil dihapus'
-                ], REST_Controller::HTTP_NO_CONTENT);
+                ], REST_Controller::HTTP_OK);
             } else {
                 // id tidak ditemukan
                 $this->response([
@@ -104,7 +104,7 @@ class Pasien extends REST_Controller
             $this->response([
                 'status' => true,
                 'message' => 'Data telah diperbaharui'
-            ],  REST_Controller::HTTP_NO_CONTENT);
+            ],  REST_Controller::HTTP_OK);
         }else{
             $this->response([
                 'status' => false,
