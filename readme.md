@@ -175,6 +175,7 @@ Contoh
 	</tr>
 	</table>
 <strong>DEL</strong>
+<br>
 Menghapus data rekam medis{id}
 	
 http://localhost/tubes-pi/api/pasien
