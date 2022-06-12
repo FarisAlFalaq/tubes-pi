@@ -1,12 +1,17 @@
 Documentation
+<br>
 Overview
+<br>
 API ini merupakan Tugas Besar mata kuliah Pemrograman Integrative yang dimana berisi data rekam medis pasien yang dibangun untuk dapat mengintegrasikan data dengan aplikasi pengguna lainnya dan diharapkan API ini dapat menjadi jembatan antara satu software dengan software yang lain sehingga aplikasi lain tidak perlu lagi membuat data rekam medis di aplikasi mereka dan tentunya memudahkan developer apabila membutuhkan data yang dapat diakses hanya dengan menggunakan URL yang ada .API ini berfungsi untuk menampilkan seluruh data rekam medis atau data rekam medis tertentu sesuai pencarian yang dilakukan pengguna.Selain itu,fitur API yang lainnya juga dapat berfungsi untuk menambah,menghapus,serta memperbaharui data yang ada dan terhubung ke dalam database.
-
+<br>
 GET
+<br>
 menampilkan data rekam medis
+<br>
 http://localhost/tubes-pi/api/pasien?api-key=api123
+<br>
 Method berikut berguna untuk menampilkan seluruh data rekam medis
-
+<br>
 Authorization
 Basic Auth
 Username
